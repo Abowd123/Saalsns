@@ -1,0 +1,281 @@
+{
+ "version": 1,
+ "achievements": [
+  {
+   "id": "first_win",
+   "title": "البداية",
+   "desc": "اربح أول مرحلة",
+   "type": "total_wins",
+   "target": 1,
+   "xp": 20,
+   "coins": 10
+  },
+  {
+   "id": "stars_10",
+   "title": "جامع النجوم",
+   "desc": "اجمع 10 نجوم",
+   "type": "total_stars",
+   "target": 10,
+   "xp": 40,
+   "coins": 20
+  },
+  {
+   "id": "stars_50",
+   "title": "سماء مضيئة",
+   "desc": "اجمع 50 نجمة",
+   "type": "total_stars",
+   "target": 50,
+   "xp": 100,
+   "coins": 50
+  },
+  {
+   "id": "stars_150",
+   "title": "مجرّة",
+   "desc": "اجمع 150 نجمة",
+   "type": "total_stars",
+   "target": 150,
+   "xp": 250,
+   "coins": 120
+  },
+  {
+   "id": "plays_25",
+   "title": "مثابر",
+   "desc": "العب 25 جولة",
+   "type": "total_plays",
+   "target": 25,
+   "xp": 50,
+   "coins": 25
+  },
+  {
+   "id": "plays_100",
+   "title": "لا يتوقف",
+   "desc": "العب 100 جولة",
+   "type": "total_plays",
+   "target": 100,
+   "xp": 150,
+   "coins": 70
+  },
+  {
+   "id": "level_5",
+   "title": "صاعد",
+   "desc": "صل إلى المستوى 5",
+   "type": "player_level",
+   "target": 5,
+   "xp": 0,
+   "coins": 40
+  },
+  {
+   "id": "level_10",
+   "title": "خبير المدار",
+   "desc": "صل إلى المستوى 10",
+   "type": "player_level",
+   "target": 10,
+   "xp": 0,
+   "coins": 100
+  },
+  {
+   "id": "explorer",
+   "title": "مستكشف",
+   "desc": "جرّب 6 ألعاب مختلفة",
+   "type": "distinct_games",
+   "target": 6,
+   "xp": 60,
+   "coins": 30
+  },
+  {
+   "id": "all_worlds",
+   "title": "أربعة عوالم",
+   "desc": "اربح مرحلة في كل عالم",
+   "type": "worlds_won",
+   "target": 4,
+   "xp": 80,
+   "coins": 40
+  },
+  {
+   "id": "perfect_5",
+   "title": "إتقان",
+   "desc": "احصل على 3 نجوم في 5 مراحل",
+   "type": "perfect_levels",
+   "target": 5,
+   "xp": 60,
+   "coins": 30
+  },
+  {
+   "id": "perfect_25",
+   "title": "بلا أخطاء",
+   "desc": "احصل على 3 نجوم في 25 مرحلة",
+   "type": "perfect_levels",
+   "target": 25,
+   "xp": 200,
+   "coins": 90
+  },
+  {
+   "id": "knowledge_30",
+   "title": "عقل موسوعي",
+   "desc": "اجمع 30 نجمة في عالم المعرفة",
+   "type": "world_stars",
+   "world": "knowledge",
+   "target": 30,
+   "xp": 100,
+   "coins": 50
+  },
+  {
+   "id": "puzzles_20",
+   "title": "فكّاك الألغاز",
+   "desc": "اجمع 20 نجمة في عالم الألغاز",
+   "type": "world_stars",
+   "world": "puzzles",
+   "target": 20,
+   "xp": 100,
+   "coins": 50
+  },
+  {
+   "id": "speed_20",
+   "title": "ردة فعل برق",
+   "desc": "اجمع 20 نجمة في عالم السرعة",
+   "type": "world_stars",
+   "world": "speed",
+   "target": 20,
+   "xp": 100,
+   "coins": 50
+  },
+  {
+   "id": "build_10",
+   "title": "المهندس",
+   "desc": "اجمع 10 نجوم في عالم البناء",
+   "type": "world_stars",
+   "world": "build",
+   "target": 10,
+   "xp": 100,
+   "coins": 50
+  },
+  {
+   "id": "quiz_all",
+   "title": "سبعة مجالات",
+   "desc": "اربح مرحلة في كل مجال من مجالات تحدي المعرفة السبعة",
+   "type": "levels_won",
+   "game": "quiz",
+   "target": 7,
+   "xp": 80,
+   "coins": 40,
+   "levels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "id": "math_3",
+   "title": "آلة حاسبة",
+   "desc": "3 نجوم في المرحلة 10 من عقل الحساب",
+   "type": "level_stars",
+   "game": "math",
+   "level": 10,
+   "target": 3,
+   "xp": 120,
+   "coins": 60
+  },
+  {
+   "id": "daily_1",
+   "title": "يوم أول",
+   "desc": "أنجز تحديًا يوميًا",
+   "type": "daily_total",
+   "target": 1,
+   "xp": 20,
+   "coins": 10
+  },
+  {
+   "id": "daily_streak_3",
+   "title": "ثلاثة أيام",
+   "desc": "أنجز التحدي اليومي 3 أيام متتالية",
+   "type": "daily_streak_best",
+   "target": 3,
+   "xp": 60,
+   "coins": 30
+  },
+  {
+   "id": "daily_streak_7",
+   "title": "أسبوع كامل",
+   "desc": "أنجز التحدي اليومي 7 أيام متتالية",
+   "type": "daily_streak_best",
+   "target": 7,
+   "xp": 150,
+   "coins": 80
+  },
+  {
+   "id": "daily_30",
+   "title": "عادة يومية",
+   "desc": "أنجز 30 تحديًا يوميًا",
+   "type": "daily_total",
+   "target": 30,
+   "xp": 300,
+   "coins": 150
+  },
+  {
+   "id": "shopper",
+   "title": "ذوق خاص",
+   "desc": "اشترِ أول عنصر من المتجر",
+   "type": "items_owned",
+   "target": 1,
+   "xp": 20,
+   "coins": 0
+  },
+  {
+   "id": "collector",
+   "title": "مقتني",
+   "desc": "امتلك 8 عناصر تجميلية",
+   "type": "items_owned",
+   "target": 8,
+   "xp": 120,
+   "coins": 0
+  },
+  {
+   "id": "crypt_master",
+   "title": "كاسر الشيفرة",
+   "desc": "اربح المرحلة 8 من حساب الحروف",
+   "type": "level_stars",
+   "game": "crypt",
+   "level": 8,
+   "target": 1,
+   "xp": 200,
+   "coins": 100
+  },
+  {
+   "id": "rush_master",
+   "title": "سائق محترف",
+   "desc": "اربح المرحلة 8 من أزمة مرور (46 حركة على الأقل)",
+   "type": "level_stars",
+   "game": "rush",
+   "level": 8,
+   "target": 1,
+   "xp": 200,
+   "coins": 100
+  },
+  {
+   "id": "nback_master",
+   "title": "ذاكرة فولاذية",
+   "desc": "اربح المرحلة 8 من N-Back (N = 4)",
+   "type": "level_stars",
+   "game": "nback",
+   "level": 8,
+   "target": 1,
+   "xp": 200,
+   "coins": 100
+  },
+  {
+   "id": "laser_master",
+   "title": "مهندس الضوء",
+   "desc": "اربح المرحلة 8 من الليزر والمرايا",
+   "type": "level_stars",
+   "game": "laser",
+   "level": 8,
+   "target": 1,
+   "xp": 200,
+   "coins": 100
+  }
+ ]
+}
