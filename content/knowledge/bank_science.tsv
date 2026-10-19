@@ -1,0 +1,61 @@
+category	difficulty	question	correct	wrong1	wrong2	wrong3	explanation	source1	source2
+physics	1	ما وحدة قياس القوة في النظام الدولي؟	النيوتن	الجول	الواط	الباسكال	النيوتن هو القوة اللازمة لإكساب كتلة 1 كغ تسارعًا قدره 1 م/ث².	BIPM SI Brochure	Britannica: newton
+physics	1	ما وحدة قياس الطاقة في النظام الدولي؟	الجول	النيوتن	الأمبير	الكلفن	الجول وحدة الطاقة والشغل.	BIPM SI Brochure	Britannica: joule
+physics	1	ما وحدة قياس القدرة الكهربائية؟	الواط	الفولت	الأوم	الكولوم	الواط يساوي جولًا واحدًا في الثانية.	BIPM SI Brochure	Britannica: watt
+physics	1	ما وحدة قياس شدة التيار الكهربائي؟	الأمبير	الفولت	الأوم	الهرتز	الأمبير إحدى الوحدات الأساسية السبع في النظام الدولي.	BIPM SI Brochure	NIST SI Units
+physics	1	ما وحدة قياس المقاومة الكهربائية؟	الأوم	الأمبير	الواط	التسلا	الأوم سُمّي على اسم الفيزيائي جورج أوم.	BIPM SI Brochure	Britannica: ohm
+physics	1	ما وحدة قياس التردد؟	الهرتز	الديسيبل	الواط	الجول	الهرتز يعني دورة واحدة في الثانية.	BIPM SI Brochure	Britannica: hertz
+physics	2	كم تبلغ سرعة الضوء في الفراغ تقريبًا؟	300 ألف كم/ث	30 ألف كم/ث	3 آلاف كم/ث	3 ملايين كم/ث	القيمة الدقيقة 299,792,458 م/ث.	BIPM SI Brochure	NIST: speed of light
+physics	1	ما الذي يقيس درجة الحرارة المطلقة في النظام الدولي؟	الكلفن	السيليزيوس	الفهرنهايت	الجول	الكلفن هو وحدة درجة الحرارة الأساسية في النظام الدولي.	BIPM SI Brochure	NIST SI Units
+physics	1	عند أي درجة سيليزيوس يغلي الماء النقي عند مستوى سطح البحر تقريبًا؟	100	90	80	120	يغلي الماء عند 100°س تقريبًا تحت ضغط جوي واحد.	Britannica: boiling point	NIST Chemistry WebBook: water
+physics	1	عند أي درجة سيليزيوس يتجمد الماء النقي تحت الضغط الجوي العادي؟	0	10	-10	4	نقطة تجمد الماء صفر سيليزيوس تقريبًا.	Britannica: freezing point	NIST Chemistry WebBook: water
+physics	2	من صاغ قوانين الحركة الثلاثة الشهيرة؟	إسحاق نيوتن	ألبرت أينشتاين	غاليليو غاليلي	مايكل فاراداي	نشر نيوتن قوانينه في كتاب المبادئ عام 1687.	Britannica: Newton's laws of motion	NASA Glenn: Newton's Laws
+physics	2	ما اسم القوة التي تجذب الأجسام نحو مركز الأرض؟	الجاذبية	الاحتكاك	المغناطيسية	الطفو	الجاذبية قوة تجاذب بين الكتل.	NASA: What is gravity	Britannica: gravity
+physics	2	ما الذي يحدث لطول موجة الصوت إذا زاد تردده مع ثبات سرعته؟	يقصر	يطول	لا يتغير	يتضاعف دائمًا	السرعة = الطول الموجي × التردد، فزيادة التردد تقصّر الطول الموجي.	Britannica: wavelength	OpenStax College Physics
+physics	2	في أي من هذه الأوساط لا ينتقل الصوت؟	الفراغ	الهواء	الماء	الحديد	الصوت موجة ميكانيكية تحتاج وسطًا ماديًا، فلا ينتقل في الفراغ.	Britannica: sound	OpenStax College Physics
+physics	2	ما اللون الذي يمتلك أطول طول موجي في الضوء المرئي؟	الأحمر	البنفسجي	الأزرق	الأخضر	الأحمر في طرف الطيف ذي الطول الموجي الأطول.	NASA: Visible Light	Britannica: color
+physics	1	ما الأداة المستخدمة لقياس الضغط الجوي؟	البارومتر	الترمومتر	الأميتر	الهيغرومتر	البارومتر يقيس الضغط الجوي.	Britannica: barometer	NOAA: barometer
+physics	2	ما اسم العالِم الذي وضع النظرية النسبية؟	ألبرت أينشتاين	نيلز بور	ماري كوري	جيمس ماكسويل	نشر أينشتاين النسبية الخاصة 1905 والعامة 1915.	Britannica: relativity	Nobel Prize: Albert Einstein
+physics	2	ماذا يقيس الأميتر؟	شدة التيار	فرق الجهد	المقاومة	درجة الحرارة	يوصل الأميتر على التوالي لقياس التيار.	Britannica: ammeter	OpenStax College Physics
+physics	3	ما وحدة قياس الشحنة الكهربائية؟	الكولوم	الأمبير	الفاراد	الهنري	الكولوم يساوي أمبيرًا لثانية واحدة.	BIPM SI Brochure	NIST SI Units
+physics	3	ما وحدة قياس كثافة الفيض المغناطيسي؟	التسلا	الويبر	الهنري	السيمنز	التسلا وحدة كثافة الفيض المغناطيسي.	BIPM SI Brochure	Britannica: tesla
+chemistry	1	ما الرمز الكيميائي للذهب؟	Au	Ag	Gd	Go	الرمز Au من الاسم اللاتيني Aurum.	IUPAC Periodic Table	Royal Society of Chemistry: Gold
+chemistry	1	ما الرمز الكيميائي للحديد؟	Fe	Ir	In	Fi	الرمز Fe من الاسم اللاتيني Ferrum.	IUPAC Periodic Table	Royal Society of Chemistry: Iron
+chemistry	1	ما الرمز الكيميائي للصوديوم؟	Na	So	Sd	S	الرمز Na من الاسم اللاتيني Natrium.	IUPAC Periodic Table	Royal Society of Chemistry: Sodium
+chemistry	1	ما الرمز الكيميائي للفضة؟	Ag	Au	Si	Sv	الرمز Ag من الاسم اللاتيني Argentum.	IUPAC Periodic Table	Royal Society of Chemistry: Silver
+chemistry	1	ما الغاز الذي نتنفسه للبقاء أحياء؟	الأكسجين	النيتروجين	الهيليوم	ثاني أكسيد الكربون	تستخدم الخلايا الأكسجين في التنفس الخلوي.	Britannica: oxygen	NIH: Respiration
+chemistry	1	ما الغاز الأكثر وفرة في الغلاف الجوي للأرض؟	النيتروجين	الأكسجين	الأرغون	ثاني أكسيد الكربون	يشكل النيتروجين نحو 78% من الهواء الجاف.	NOAA: atmosphere	Britannica: atmosphere
+chemistry	1	ما العنصر الذي عدده الذري 1؟	الهيدروجين	الهيليوم	الليثيوم	الكربون	الهيدروجين أخف العناصر وأولها في الجدول الدوري.	IUPAC Periodic Table	Royal Society of Chemistry: Hydrogen
+chemistry	2	ما العنصر الذي عدده الذري 6؟	الكربون	النيتروجين	الأكسجين	البورون	الكربون أساس الكيمياء العضوية.	IUPAC Periodic Table	Royal Society of Chemistry: Carbon
+chemistry	1	ما الصيغة الكيميائية لملح الطعام؟	NaCl	KCl	NaOH	CaCO₃	كلوريد الصوديوم هو ملح الطعام الشائع.	Britannica: sodium chloride	PubChem: Sodium chloride
+chemistry	1	ما الصيغة الكيميائية لثاني أكسيد الكربون؟	CO₂	CO	C₂O	O₂C₂	جزيء من ذرة كربون وذرتي أكسجين.	PubChem: Carbon dioxide	Britannica: carbon dioxide
+chemistry	2	ما قيمة pH للماء النقي عند 25 درجة سيليزيوس؟	7	0	14	5	الماء النقي متعادل عند 25°س.	Britannica: pH	IUPAC Gold Book: pH
+chemistry	2	المحلول الذي قيمة pH له أقل من 7 يُسمى:	حمضيًا	قاعديًا	متعادلًا	مشبعًا	كلما قلّت القيمة عن 7 زادت الحمضية.	Britannica: pH	IUPAC Gold Book: pH
+chemistry	2	أي هذه العناصر غاز نبيل؟	النيون	الصوديوم	الكبريت	الحديد	النيون من مجموعة الغازات النبيلة.	IUPAC Periodic Table	Royal Society of Chemistry: Neon
+chemistry	2	ما العنصر السائل عند درجة حرارة الغرفة من بين هذه؟	الزئبق	الرصاص	النحاس	الزنك	الزئبق فلز سائل في الظروف العادية.	Royal Society of Chemistry: Mercury	Britannica: mercury
+chemistry	2	ما اسم الجسيم ذي الشحنة السالبة في الذرة؟	الإلكترون	البروتون	النيوترون	الفوتون	الإلكترونات تدور حول النواة وشحنتها سالبة.	Britannica: electron	OpenStax Chemistry
+chemistry	2	ما الجسيم المتعادل كهربائيًا في نواة الذرة؟	النيوترون	البروتون	الإلكترون	الأيون	النيوترون بلا شحنة كهربائية.	Britannica: neutron	OpenStax Chemistry
+chemistry	3	من وضع الجدول الدوري الحديث المرتب حسب الخصائص عام 1869؟	ديمتري مندلييف	أنطوان لافوازييه	جون دالتون	روبرت بويل	نشر مندلييف جدوله عام 1869.	Royal Society of Chemistry: Mendeleev	Britannica: Dmitri Mendeleev
+chemistry	2	ما الرمز الكيميائي للبوتاسيوم؟	K	P	Po	Pt	الرمز K من الاسم اللاتيني Kalium.	IUPAC Periodic Table	Royal Society of Chemistry: Potassium
+chemistry	3	ما الرمز الكيميائي للرصاص؟	Pb	Pl	Rp	Ld	الرمز Pb من الاسم اللاتيني Plumbum.	IUPAC Periodic Table	Royal Society of Chemistry: Lead
+chemistry	2	تحول المادة من الحالة الصلبة إلى الغازية مباشرة يسمى:	التسامي	التبخر	التكثف	الانصهار	مثال ذلك الثلج الجاف.	Britannica: sublimation	OpenStax Chemistry
+biology	1	ما أكبر عضو في جسم الإنسان؟	الجلد	الكبد	الدماغ	الرئة	الجلد أكبر عضو من حيث المساحة والوزن.	NIH MedlinePlus: Skin	Britannica: skin
+biology	1	أين يحدث البناء الضوئي في خلايا النبات؟	البلاستيدات الخضراء	الميتوكوندريا	النواة	الريبوسومات	تحتوي البلاستيدات الخضراء على الكلوروفيل.	Britannica: chloroplast	OpenStax Biology
+biology	2	ما العضية المسؤولة عن إنتاج معظم طاقة الخلية؟	الميتوكوندريا	جهاز غولجي	الفجوة	الشبكة الإندوبلازمية	تنتج الميتوكوندريا ATP عبر التنفس الخلوي.	Britannica: mitochondrion	OpenStax Biology
+biology	1	كم عدد حجرات قلب الإنسان؟	4	2	3	6	أذينان وبطينان.	NIH NHLBI: How the Heart Works	Britannica: heart
+biology	2	كم عدد الكروموسومات في الخلية الجسدية للإنسان عادة؟	46	23	44	48	23 زوجًا من الكروموسومات.	NIH NHGRI: Chromosomes	Britannica: chromosome
+biology	1	ما الغاز الذي تمتصه النباتات من الهواء للبناء الضوئي؟	ثاني أكسيد الكربون	الأكسجين	النيتروجين	الهيدروجين	يدخل ثاني أكسيد الكربون في تكوين السكريات.	Britannica: photosynthesis	OpenStax Biology
+biology	1	ما أطول عظمة في جسم الإنسان؟	عظمة الفخذ	عظمة العضد	عظمة الساق	عظمة الترقوة	عظمة الفخذ هي الأطول والأقوى.	Britannica: femur	NIH MedlinePlus: Femur
+biology	2	ما الخلايا التي تنقل الأكسجين في الدم؟	خلايا الدم الحمراء	خلايا الدم البيضاء	الصفائح الدموية	الخلايا العصبية	تحتوي على الهيموغلوبين الذي يرتبط بالأكسجين.	NIH MedlinePlus: Red blood cells	Britannica: red blood cell
+biology	2	ما اسم المادة الوراثية في معظم الكائنات الحية؟	DNA	ATP	البروتين	الكولاجين	الحمض النووي الريبوزي منقوص الأكسجين يحمل المعلومات الوراثية.	NIH NHGRI: DNA	Britannica: DNA
+biology	1	أي هذه الحيوانات من الثدييات؟	الحوت الأزرق	سمك القرش	التمساح	البطريق	الحيتان ثدييات تتنفس الهواء وترضع صغارها.	NOAA Fisheries: Blue Whale	Britannica: whale
+biology	2	ما أكبر حيوان عاش على الأرض بحسب المعروف؟	الحوت الأزرق	الفيل الإفريقي	الديناصور تي ركس	قرش الحوت	الحوت الأزرق أكبر حيوان معروف.	NOAA Fisheries: Blue Whale	Britannica: blue whale
+biology	2	أين يُنتج الإنسولين في جسم الإنسان؟	البنكرياس	الكبد	الكلية	المعدة	تفرزه خلايا بيتا في جزر لانجرهانس.	NIH NIDDK: Insulin	Britannica: insulin
+biology	1	ما العضو المسؤول عن تنقية الدم وإنتاج البول؟	الكلية	الكبد	الطحال	القلب	تُرشّح الكليتان الدم وتُخرجان الفضلات.	NIH NIDDK: Kidneys	Britannica: kidney
+biology	3	من اكتشف البنسلين عام 1928؟	ألكسندر فلمنغ	لويس باستير	روبرت كوخ	إدوارد جينر	لاحظ فلمنغ أثر عفن البنسيليوم على البكتيريا.	Nobel Prize: Alexander Fleming	Britannica: penicillin
+biology	2	ما الوحدة الأساسية لبناء الكائنات الحية؟	الخلية	الذرة	العضو	النسيج	كل الكائنات الحية مكونة من خلية أو أكثر.	Britannica: cell	OpenStax Biology
+biology	2	ما اسم العملية التي تنقسم فيها الخلية لإنتاج خليتين متطابقتين؟	الانقسام المتساوي	الانقسام المنصف	الإخصاب	التبرعم	ينتج الانقسام المتساوي خليتين متطابقتين وراثيًا.	Britannica: mitosis	OpenStax Biology
+biology	1	ما الحيوان المعروف بأنه أسرع حيوان بري؟	الفهد	الأسد	الحصان	الغزال	يصل الفهد إلى سرعات عالية لمسافات قصيرة.	Britannica: cheetah	Smithsonian National Zoo: Cheetah
+biology	2	ما نوع الدم المعروف بالمعطي العام لكريات الدم الحمراء؟	O سالب	AB موجب	A موجب	B سالب	كريات O سالب تناسب معظم المتلقين.	American Red Cross: Blood Types	NIH: Blood groups
+biology	3	ما اسم الجزء من الدماغ المسؤول أساسًا عن التوازن وتنسيق الحركة؟	المخيخ	المخ	النخاع المستطيل	المهاد	المخيخ يقع خلف جذع الدماغ.	NIH NINDS: Brain Basics	Britannica: cerebellum
+biology	2	ما الذي ينتج الأكسجين أثناء البناء الضوئي؟	تفكك الماء	تفكك السكر	امتصاص النيتروجين	التنفس الخلوي	يأتي الأكسجين المنطلق من انشطار جزيئات الماء.	OpenStax Biology	Britannica: photosynthesis
