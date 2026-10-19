@@ -1,0 +1,99 @@
+{
+ "version": 1,
+ "categories": {
+  "shape": "الأشكال",
+  "fruit": "الفواكه والخضار",
+  "animal": "الحيوانات",
+  "tool": "الأدوات",
+  "landmark": "المعالم",
+  "flag": "الأعلام"
+ },
+ "questions": {
+  "shape": "ما اسم هذا الشكل؟",
+  "fruit": "ما هذا؟",
+  "animal": "ما هذا الحيوان؟",
+  "tool": "ما هذه الأداة؟",
+  "landmark": "ما هذا المعلم؟",
+  "flag": "علم أي دولة؟"
+ },
+ "levels": [
+  {
+   "id": 1,
+   "name": "الأشكال",
+   "cats": [
+    "shape"
+   ]
+  },
+  {
+   "id": 2,
+   "name": "الفواكه والخضار",
+   "cats": [
+    "fruit"
+   ]
+  },
+  {
+   "id": 3,
+   "name": "الحيوانات",
+   "cats": [
+    "animal"
+   ]
+  },
+  {
+   "id": 4,
+   "name": "الأدوات",
+   "cats": [
+    "tool"
+   ]
+  },
+  {
+   "id": 5,
+   "name": "الأعلام",
+   "cats": [
+    "flag"
+   ]
+  },
+  {
+   "id": 6,
+   "name": "المعالم",
+   "cats": [
+    "landmark"
+   ]
+  },
+  {
+   "id": 7,
+   "name": "حيوانات وفواكه",
+   "cats": [
+    "animal",
+    "fruit"
+   ]
+  },
+  {
+   "id": 8,
+   "name": "أدوات وأشكال",
+   "cats": [
+    "tool",
+    "shape"
+   ]
+  },
+  {
+   "id": 9,
+   "name": "أعلام ومعالم",
+   "cats": [
+    "flag",
+    "landmark"
+   ]
+  },
+  {
+   "id": 10,
+   "name": "كل شيء",
+   "cats": [
+    "shape",
+    "fruit",
+    "animal",
+    "tool",
+    "landmark",
+    "flag"
+   ]
+  }
+ ]
+}
