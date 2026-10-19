@@ -1,0 +1,1167 @@
+{
+ "version": 1,
+ "symbols": {
+  "sun": "شمس",
+  "moon": "قمر",
+  "star": "نجمة",
+  "drop": "قطرة",
+  "triangle": "مثلث",
+  "diamond": "معيّن"
+ },
+ "hint_cost": 15,
+ "rooms": [
+  {
+   "id": 1,
+   "name": "المكتب",
+   "intro": "باب المكتب أُغلق خلفك. ابحث في الغرفة عن طريق للخروج.",
+   "items": {
+    "key_small": {
+     "name": "مفتاح صغير",
+     "icon": "key"
+    },
+    "key_door": {
+     "name": "مفتاح الباب",
+     "icon": "key_big"
+    }
+   },
+   "objects": [
+    {
+     "id": "clock",
+     "kind": "clock",
+     "rect": [
+      6,
+      8,
+      18,
+      18
+     ],
+     "label": "ساعة الحائط",
+     "action": {
+      "type": "look",
+      "text": "ساعة متوقفة. عقرب الساعات القصير ثابت لا يتحرك."
+     },
+     "hour": 3
+    },
+    {
+     "id": "frame",
+     "kind": "frame",
+     "rect": [
+      30,
+      8,
+      30,
+      20
+     ],
+     "label": "لوحة ليلية",
+     "action": {
+      "type": "look",
+      "text": "لوحة لسماء الليل."
+     },
+     "stars": 5
+    },
+    {
+     "id": "door",
+     "kind": "door",
+     "rect": [
+      72,
+      22,
+      24,
+      48
+     ],
+     "label": "الباب",
+     "action": {
+      "type": "item",
+      "needs": "key_door",
+      "win": true,
+      "text": "الباب مقفل بقفل كبير."
+     }
+    },
+    {
+     "id": "plant",
+     "kind": "plant",
+     "rect": [
+      3,
+      48,
+      14,
+      22
+     ],
+     "label": "نبتة",
+     "action": {
+      "type": "search",
+      "gives": "key_small",
+      "text": "بين أوراق النبتة وجدت مفتاحًا صغيرًا."
+     }
+    },
+    {
+     "id": "candles",
+     "kind": "candles",
+     "rect": [
+      44,
+      50,
+      18,
+      10
+     ],
+     "label": "شموع",
+     "action": {
+      "type": "look",
+      "text": "شموع مضاءة على المكتب."
+     },
+     "count": 2
+    },
+    {
+     "id": "desk",
+     "kind": "desk",
+     "rect": [
+      22,
+      60,
+      44,
+      14
+     ],
+     "label": "درج المكتب",
+     "action": {
+      "type": "item",
+      "needs": "key_small",
+      "reveals": [
+       "note1"
+      ],
+      "text": "درج المكتب مقفل بقفل صغير.",
+      "done": "فتحت الدرج. في داخله ورقة مطوية."
+     }
+    },
+    {
+     "id": "note1",
+     "kind": "note",
+     "rect": [
+      26,
+      78,
+      12,
+      8
+     ],
+     "label": "ورقة من الدرج",
+     "action": {
+      "type": "look",
+      "text": "«رمز الخزنة: عقرب الساعة، ثم عدد نجوم اللوحة، ثم عدد الشموع.»"
+     },
+     "hidden": true
+    },
+    {
+     "id": "safe",
+     "kind": "safe",
+     "rect": [
+      44,
+      80,
+      24,
+      22
+     ],
+     "label": "الخزنة",
+     "action": {
+      "type": "code",
+      "answer": "352",
+      "gives": "key_door",
+      "from": [
+       [
+        "clock",
+        "hour"
+       ],
+       [
+        "frame",
+        "stars"
+       ],
+       [
+        "candles",
+        "count"
+       ]
+      ],
+      "clues": [
+       "note1"
+      ],
+      "text": "خزنة برمز من 3 أرقام.",
+      "done": "انفتحت الخزنة. في داخلها مفتاح الباب."
+     }
+    }
+   ],
+   "hints": [
+    {
+     "until": "plant",
+     "text": "النبتة في الزاوية تخفي شيئًا بين أوراقها."
+    },
+    {
+     "until": "desk",
+     "text": "المفتاح الصغير يناسب درج المكتب."
+    },
+    {
+     "until": "safe",
+     "text": "اقرأ ورقة الدرج، ثم عُدّ: الرقم الذي يشير له العقرب القصير، النجوم، الشموع."
+    },
+    {
+     "until": "door",
+     "text": "مفتاح الباب في الخزنة. استخدمه على الباب."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "name": "المكتبة",
+   "intro": "مكتبة قديمة وباب برمز. الكتب تعرف الكثير.",
+   "items": {
+    "key_cab": {
+     "name": "مفتاح الخزانة",
+     "icon": "key"
+    }
+   },
+   "objects": [
+    {
+     "id": "shelf",
+     "kind": "shelf",
+     "rect": [
+      4,
+      6,
+      40,
+      44
+     ],
+     "label": "رف الكتب",
+     "action": {
+      "type": "look",
+      "text": "كتب بأطوال وألوان مختلفة، على بعضها رموز."
+     },
+     "books": [
+      {
+       "sym": "sun",
+       "h": 6,
+       "c": 0
+      },
+      {
+       "sym": "",
+       "h": 8,
+       "c": 1
+      },
+      {
+       "sym": "moon",
+       "h": 9,
+       "c": 0
+      },
+      {
+       "sym": "drop",
+       "h": 4,
+       "c": 2
+      },
+      {
+       "sym": "",
+       "h": 7,
+       "c": 0
+      },
+      {
+       "sym": "star",
+       "h": 5,
+       "c": 1
+      }
+     ]
+    },
+    {
+     "id": "sign",
+     "kind": "sign",
+     "rect": [
+      50,
+      8,
+      22,
+      12
+     ],
+     "label": "لوحة نحاسية",
+     "action": {
+      "type": "look",
+      "text": "«افتح الصندوق برموز الكتب: من الكتاب الأقصر إلى الأطول.»"
+     }
+    },
+    {
+     "id": "lamps",
+     "kind": "lamps",
+     "rect": [
+      50,
+      26,
+      22,
+      10
+     ],
+     "label": "مصابيح الجدار",
+     "action": {
+      "type": "look",
+      "text": "ثلاثة مصابيح على الجدار."
+     },
+     "lit": [
+      true,
+      false,
+      true
+     ]
+    },
+    {
+     "id": "door",
+     "kind": "door",
+     "rect": [
+      76,
+      22,
+      22,
+      48
+     ],
+     "label": "الباب",
+     "action": {
+      "type": "code",
+      "answer": "236",
+      "win": true,
+      "from": [
+       [
+        "lamps",
+        "lit_count"
+       ],
+       [
+        "shelf",
+        "red_books"
+       ],
+       [
+        "shelf",
+        "book_count"
+       ]
+      ],
+      "clues": [
+       "note2"
+      ],
+      "text": "الباب مقفل بلوحة أرقام من 3 خانات."
+     }
+    },
+    {
+     "id": "box",
+     "kind": "chest",
+     "rect": [
+      48,
+      58,
+      24,
+      14
+     ],
+     "label": "صندوق الرموز",
+     "action": {
+      "type": "symbols",
+      "answer": [
+       "drop",
+       "star",
+       "sun",
+       "moon"
+      ],
+      "gives": "key_cab",
+      "rule": {
+       "obj": "shelf",
+       "by": "height_asc"
+      },
+      "clues": [
+       "sign"
+      ],
+      "text": "صندوق بقفل من 4 رموز.",
+      "done": "انفتح الصندوق. في داخله مفتاح الخزانة."
+     }
+    },
+    {
+     "id": "cabinet",
+     "kind": "cabinet",
+     "rect": [
+      6,
+      62,
+      26,
+      36
+     ],
+     "label": "خزانة خشبية",
+     "action": {
+      "type": "item",
+      "needs": "key_cab",
+      "reveals": [
+       "note2"
+      ],
+      "text": "خزانة مقفلة.",
+      "done": "فتحت الخزانة. على رفها ورقة."
+     }
+    },
+    {
+     "id": "note2",
+     "kind": "note",
+     "rect": [
+      40,
+      84,
+      12,
+      8
+     ],
+     "label": "ورقة من الخزانة",
+     "action": {
+      "type": "look",
+      "text": "«رمز الباب: المصابيح المضيئة، ثم الكتب الحمراء، ثم كل الكتب.»"
+     },
+     "hidden": true
+    }
+   ],
+   "hints": [
+    {
+     "until": "box",
+     "text": "اللوحة النحاسية تقول: رتّب رموز الكتب من الأقصر للأطول. الكتب بلا رموز لا تدخل."
+    },
+    {
+     "until": "cabinet",
+     "text": "مفتاح الصندوق يفتح الخزانة الخشبية."
+    },
+    {
+     "until": "door",
+     "text": "عُدّ المصابيح المضيئة، ثم الكتب الحمراء، ثم كل الكتب على الرف."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "name": "المختبر",
+   "intro": "مختبر مغلق. الباب يحتاج بطاقة دخول.",
+   "items": {
+    "key_drawer": {
+     "name": "مفتاح الدرج",
+     "icon": "key"
+    },
+    "card": {
+     "name": "بطاقة الدخول",
+     "icon": "card"
+    }
+   },
+   "objects": [
+    {
+     "id": "board",
+     "kind": "board",
+     "rect": [
+      4,
+      6,
+      44,
+      26
+     ],
+     "label": "السبورة",
+     "action": {
+      "type": "look",
+      "text": "رموز تحت كل منها رقم."
+     },
+     "pairs": [
+      [
+       "moon",
+       3
+      ],
+      [
+       "triangle",
+       1
+      ],
+      [
+       "sun",
+       4
+      ],
+      [
+       "drop",
+       2
+      ]
+     ]
+    },
+    {
+     "id": "flasks",
+     "kind": "flasks",
+     "rect": [
+      54,
+      10,
+      18,
+      16
+     ],
+     "label": "قوارير",
+     "action": {
+      "type": "look",
+      "text": "قوارير ملونة. لا تبدو مفيدة للخروج."
+     }
+    },
+    {
+     "id": "door",
+     "kind": "door",
+     "rect": [
+      76,
+      22,
+      22,
+      48
+     ],
+     "label": "الباب",
+     "action": {
+      "type": "item",
+      "needs": "card",
+      "win": true,
+      "text": "الباب يُفتح ببطاقة دخول فقط."
+     }
+    },
+    {
+     "id": "cabinet",
+     "kind": "cabinet",
+     "rect": [
+      4,
+      40,
+      22,
+      30
+     ],
+     "label": "خزانة المواد",
+     "action": {
+      "type": "symbols",
+      "answer": [
+       "triangle",
+       "drop",
+       "moon",
+       "sun"
+      ],
+      "gives": "card",
+      "rule": {
+       "obj": "board",
+       "by": "number_asc"
+      },
+      "clues": [
+       "note3"
+      ],
+      "text": "خزانة بقفل من 4 رموز.",
+      "done": "انفتحت الخزانة. في داخلها بطاقة الدخول."
+     }
+    },
+    {
+     "id": "desk",
+     "kind": "desk",
+     "rect": [
+      32,
+      56,
+      40,
+      14
+     ],
+     "label": "طاولة المختبر",
+     "action": {
+      "type": "item",
+      "needs": "key_drawer",
+      "reveals": [
+       "note3"
+      ],
+      "text": "درج الطاولة مقفل.",
+      "done": "فتحت الدرج. فيه ورقة ملاحظات."
+     }
+    },
+    {
+     "id": "note3",
+     "kind": "note",
+     "rect": [
+      36,
+      74,
+      12,
+      8
+     ],
+     "label": "ملاحظات",
+     "action": {
+      "type": "look",
+      "text": "«قفل الخزانة: رموز السبورة حسب الأرقام تحتها، من 1 إلى 4.»"
+     },
+     "hidden": true
+    },
+    {
+     "id": "rug",
+     "kind": "rug",
+     "rect": [
+      30,
+      88,
+      40,
+      12
+     ],
+     "label": "سجادة",
+     "action": {
+      "type": "search",
+      "gives": "key_drawer",
+      "text": "رفعت طرف السجادة فوجدت مفتاحًا."
+     }
+    }
+   ],
+   "hints": [
+    {
+     "until": "rug",
+     "text": "المفاتيح تُخبَّأ كثيرًا تحت السجاد."
+    },
+    {
+     "until": "desk",
+     "text": "المفتاح يفتح درج طاولة المختبر."
+    },
+    {
+     "until": "cabinet",
+     "text": "رتّب رموز السبورة حسب الرقم تحت كل رمز: 1 أولًا ثم 2 ثم 3 ثم 4."
+    },
+    {
+     "until": "door",
+     "text": "استخدم بطاقة الدخول على الباب."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "name": "غرفة الجلوس",
+   "intro": "ثلاث لوحات وخزنة وصندوق. أين الطريق؟",
+   "items": {
+    "key_chest": {
+     "name": "مفتاح الصندوق",
+     "icon": "key"
+    },
+    "key_door": {
+     "name": "مفتاح الباب",
+     "icon": "key_big"
+    }
+   },
+   "objects": [
+    {
+     "id": "frame_a",
+     "kind": "frame",
+     "rect": [
+      6,
+      12,
+      10,
+      9
+     ],
+     "label": "لوحة صغيرة",
+     "action": {
+      "type": "look",
+      "text": "لوحة صغيرة."
+     },
+     "stars": 4
+    },
+    {
+     "id": "frame_b",
+     "kind": "frame",
+     "rect": [
+      22,
+      6,
+      28,
+      22
+     ],
+     "label": "لوحة كبيرة",
+     "action": {
+      "type": "look",
+      "text": "لوحة كبيرة."
+     },
+     "stars": 1
+    },
+    {
+     "id": "frame_c",
+     "kind": "frame",
+     "rect": [
+      54,
+      8,
+      18,
+      16
+     ],
+     "label": "لوحة متوسطة",
+     "action": {
+      "type": "look",
+      "text": "لوحة متوسطة الحجم."
+     },
+     "stars": 7
+    },
+    {
+     "id": "door",
+     "kind": "door",
+     "rect": [
+      76,
+      22,
+      22,
+      48
+     ],
+     "label": "الباب",
+     "action": {
+      "type": "item",
+      "needs": "key_door",
+      "win": true,
+      "text": "الباب مقفل."
+     }
+    },
+    {
+     "id": "vase",
+     "kind": "vase",
+     "rect": [
+      6,
+      52,
+      12,
+      18
+     ],
+     "label": "مزهرية",
+     "action": {
+      "type": "search",
+      "reveals": [
+       "note4"
+      ],
+      "text": "في قاع المزهرية ورقة ملفوفة."
+     }
+    },
+    {
+     "id": "note4",
+     "kind": "note",
+     "rect": [
+      20,
+      62,
+      12,
+      8
+     ],
+     "label": "ورقة المزهرية",
+     "action": {
+      "type": "look",
+      "text": "«رمز الخزنة: نجوم اللوحات، من اللوحة الأصغر إلى الأكبر.»"
+     },
+     "hidden": true
+    },
+    {
+     "id": "safe",
+     "kind": "safe",
+     "rect": [
+      38,
+      52,
+      24,
+      20
+     ],
+     "label": "الخزنة",
+     "action": {
+      "type": "code",
+      "answer": "471",
+      "gives": "key_chest",
+      "rule": {
+       "objs": [
+        "frame_a",
+        "frame_b",
+        "frame_c"
+       ],
+       "by": "area_asc",
+       "param": "stars"
+      },
+      "clues": [
+       "note4"
+      ],
+      "text": "خزنة برمز من 3 أرقام.",
+      "done": "انفتحت الخزنة. فيها مفتاح صغير للصندوق."
+     }
+    },
+    {
+     "id": "chest",
+     "kind": "chest",
+     "rect": [
+      10,
+      80,
+      30,
+      18
+     ],
+     "label": "صندوق خشبي",
+     "action": {
+      "type": "item",
+      "needs": "key_chest",
+      "gives": "key_door",
+      "text": "صندوق مقفل.",
+      "done": "فتحت الصندوق. فيه مفتاح الباب."
+     }
+    },
+    {
+     "id": "sofa",
+     "kind": "sofa",
+     "rect": [
+      46,
+      78,
+      28,
+      20
+     ],
+     "label": "أريكة",
+     "action": {
+      "type": "look",
+      "text": "أريكة مريحة. لا شيء تحت الوسائد."
+     }
+    }
+   ],
+   "hints": [
+    {
+     "until": "vase",
+     "text": "المزهرية أعمق مما تبدو."
+    },
+    {
+     "until": "safe",
+     "text": "قارن أحجام اللوحات الثلاث، ثم اكتب عدد النجوم في كل منها من الأصغر للأكبر."
+    },
+    {
+     "until": "chest",
+     "text": "مفتاح الخزنة يفتح الصندوق الخشبي."
+    },
+    {
+     "until": "door",
+     "text": "مفتاح الباب في الصندوق."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "name": "القبو",
+   "intro": "قبو مظلم بباب حديدي عليه رموز.",
+   "items": {
+    "key_tool": {
+     "name": "مفتاح العدة",
+     "icon": "key"
+    },
+    "screwdriver": {
+     "name": "مفك",
+     "icon": "screwdriver"
+    }
+   },
+   "objects": [
+    {
+     "id": "vent",
+     "kind": "vent",
+     "rect": [
+      8,
+      10,
+      22,
+      16
+     ],
+     "label": "فتحة تهوية",
+     "action": {
+      "type": "item",
+      "needs": "screwdriver",
+      "reveals": [
+       "note5"
+      ],
+      "text": "شبكة مثبتة ببراغي.",
+      "done": "فككت البراغي. خلف الشبكة رسم قديم."
+     }
+    },
+    {
+     "id": "note5",
+     "kind": "drawing",
+     "rect": [
+      34,
+      10,
+      30,
+      16
+     ],
+     "label": "رسم خلف الشبكة",
+     "action": {
+      "type": "look",
+      "text": "أربعة رموز مرقّمة من 1 إلى 4."
+     },
+     "hidden": true,
+     "syms": [
+      "moon",
+      "star",
+      "diamond",
+      "sun"
+     ]
+    },
+    {
+     "id": "pipes",
+     "kind": "pipes",
+     "rect": [
+      4,
+      30,
+      60,
+      8
+     ],
+     "label": "أنابيب",
+     "action": {
+      "type": "look",
+      "text": "أنابيب صدئة تقطر ماء."
+     }
+    },
+    {
+     "id": "door",
+     "kind": "door",
+     "rect": [
+      76,
+      22,
+      22,
+      48
+     ],
+     "label": "الباب الحديدي",
+     "action": {
+      "type": "symbols",
+      "answer": [
+       "moon",
+       "star",
+       "diamond",
+       "sun"
+      ],
+      "win": true,
+      "rule": {
+       "obj": "note5",
+       "by": "as_listed"
+      },
+      "clues": [
+       "note5"
+      ],
+      "text": "قفل الباب من 4 رموز."
+     }
+    },
+    {
+     "id": "barrel",
+     "kind": "barrel",
+     "rect": [
+      6,
+      54,
+      16,
+      24
+     ],
+     "label": "برميل",
+     "action": {
+      "type": "search",
+      "gives": "key_tool",
+      "text": "في قاع البرميل مفتاح صغير."
+     }
+    },
+    {
+     "id": "toolbox",
+     "kind": "toolbox",
+     "rect": [
+      34,
+      74,
+      30,
+      14
+     ],
+     "label": "صندوق العدة",
+     "action": {
+      "type": "item",
+      "needs": "key_tool",
+      "gives": "screwdriver",
+      "text": "صندوق العدة مقفل.",
+      "done": "فتحت الصندوق. فيه مفك."
+     }
+    }
+   ],
+   "hints": [
+    {
+     "until": "barrel",
+     "text": "فتّش البرميل."
+    },
+    {
+     "until": "toolbox",
+     "text": "المفتاح الصغير يفتح صندوق العدة."
+    },
+    {
+     "until": "vent",
+     "text": "المفك يفك براغي فتحة التهوية."
+    },
+    {
+     "until": "door",
+     "text": "أدخل رموز الرسم بنفس أرقامها من 1 إلى 4."
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "name": "المرصد",
+   "intro": "الغرفة الأخيرة. السماء تحمل الجواب.",
+   "items": {
+    "key_door": {
+     "name": "مفتاح البوابة",
+     "icon": "key_big"
+    }
+   },
+   "objects": [
+    {
+     "id": "poster",
+     "kind": "poster",
+     "rect": [
+      4,
+      6,
+      34,
+      24
+     ],
+     "label": "خريطة النجوم",
+     "action": {
+      "type": "look",
+      "text": "رموز السماء، وبجانب كل رمز نقاط."
+     },
+     "pairs": [
+      [
+       "star",
+       5
+      ],
+      [
+       "moon",
+       2
+      ],
+      [
+       "sun",
+       7
+      ],
+      [
+       "drop",
+       1
+      ]
+     ]
+    },
+    {
+     "id": "window",
+     "kind": "window",
+     "rect": [
+      42,
+      6,
+      28,
+      24
+     ],
+     "label": "النافذة",
+     "action": {
+      "type": "look",
+      "text": "كواكب تلمع في السماء."
+     },
+     "planets": 6
+    },
+    {
+     "id": "clock",
+     "kind": "clock",
+     "rect": [
+      42,
+      34,
+      14,
+      14
+     ],
+     "label": "ساعة",
+     "action": {
+      "type": "look",
+      "text": "ساعة صغيرة متوقفة."
+     },
+     "hour": 8
+    },
+    {
+     "id": "door",
+     "kind": "door",
+     "rect": [
+      76,
+      22,
+      22,
+      48
+     ],
+     "label": "البوابة",
+     "action": {
+      "type": "item",
+      "needs": "key_door",
+      "win": true,
+      "text": "البوابة مقفلة."
+     }
+    },
+    {
+     "id": "note6",
+     "kind": "note",
+     "rect": [
+      6,
+      40,
+      14,
+      8
+     ],
+     "label": "ورقة على الحائط",
+     "action": {
+      "type": "look",
+      "text": "«الصندوق: رموز الخريطة من الأكثر نقاطًا إلى الأقل.»"
+     }
+    },
+    {
+     "id": "candles",
+     "kind": "candles",
+     "rect": [
+      8,
+      56,
+      20,
+      12
+     ],
+     "label": "شموع",
+     "action": {
+      "type": "look",
+      "text": "شموع على رف صغير."
+     },
+     "count": 4
+    },
+    {
+     "id": "chest",
+     "kind": "chest",
+     "rect": [
+      34,
+      60,
+      26,
+      14
+     ],
+     "label": "صندوق الفلكي",
+     "action": {
+      "type": "symbols",
+      "answer": [
+       "sun",
+       "star",
+       "moon",
+       "drop"
+      ],
+      "reveals": [
+       "note7"
+      ],
+      "rule": {
+       "obj": "poster",
+       "by": "count_desc"
+      },
+      "clues": [
+       "note6"
+      ],
+      "text": "صندوق بقفل من 4 رموز.",
+      "done": "انفتح الصندوق. فيه ورقة."
+     }
+    },
+    {
+     "id": "note7",
+     "kind": "note",
+     "rect": [
+      62,
+      78,
+      12,
+      8
+     ],
+     "label": "ورقة الصندوق",
+     "action": {
+      "type": "look",
+      "text": "«الخزنة: عقرب الساعة، ثم الشموع، ثم الكواكب في النافذة.»"
+     },
+     "hidden": true
+    },
+    {
+     "id": "safe",
+     "kind": "safe",
+     "rect": [
+      8,
+      80,
+      24,
+      22
+     ],
+     "label": "الخزنة",
+     "action": {
+      "type": "code",
+      "answer": "846",
+      "gives": "key_door",
+      "from": [
+       [
+        "clock",
+        "hour"
+       ],
+       [
+        "candles",
+        "count"
+       ],
+       [
+        "window",
+        "planets"
+       ]
+      ],
+      "clues": [
+       "note7"
+      ],
+      "text": "خزنة برمز من 3 أرقام.",
+      "done": "انفتحت الخزنة. فيها مفتاح البوابة."
+     }
+    }
+   ],
+   "hints": [
+    {
+     "until": "chest",
+     "text": "رتّب رموز خريطة النجوم من الرمز ذي النقاط الأكثر إلى الأقل."
+    },
+    {
+     "until": "safe",
+     "text": "اقرأ ورقة الصندوق ثم عُدّ: الرقم الذي يشير له العقرب، الشموع، الكواكب."
+    },
+    {
+     "until": "door",
+     "text": "مفتاح البوابة في الخزنة."
+    }
+   ]
+  }
+ ]
+}
