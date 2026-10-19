@@ -1,0 +1,6 @@
+{"version":1,"levels":[
+ {"id":1,"name":"ثلاث طبقات","target":3,"blocks":6,"swing":1.0,"shapes":["wide","wide","mid","mid","mid","small"]},
+ {"id":2,"name":"البرج الأوسط","target":4,"blocks":7,"swing":1.2,"shapes":["wide","mid","mid","wide","mid","small","small"]},
+ {"id":3,"name":"الحجر الثقيل","target":5,"blocks":8,"swing":1.35,"shapes":["wide","stone","mid","mid","stone","mid","small","small"]},
+ {"id":4,"name":"القمة","target":6,"blocks":9,"swing":1.5,"shapes":["wide","mid","stone","mid","small","mid","small","stone","small"]}
+]}
