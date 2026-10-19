@@ -1,0 +1,31 @@
+name: Verify game content
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Static GDScript checks
+        run: |
+          python tools/gd_lint.py
+      - name: Level and content proofs
+        run: |
+          set -e
+          python tools/sokoban_solver.py
+          python tools/maze_gen.py --check
+          python tools/escape_check.py
+          python tools/speed_check.py --check
+          python tools/guess_check.py --check
+          python tools/packing_gen.py --check
+          python tools/pipe_cost_gen.py --check
+          python tools/physics_lab_gen.py --check
+          python tools/bridge_gen.py --check
