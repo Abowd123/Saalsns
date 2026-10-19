@@ -1,0 +1,157 @@
+{
+ "version": 1,
+ "levels": [
+  {
+   "id": 1,
+   "name": "التدريب",
+   "duration": 30,
+   "count": 26,
+   "goods": 22,
+   "smin": 0.08,
+   "smax": 0.15,
+   "lmin": 2.2,
+   "lmax": 2.8,
+   "size": 0.095,
+   "penalty": 3.0,
+   "goals": [
+    11,
+    16,
+    19
+   ],
+   "fingerprint": 487321
+  },
+  {
+   "id": 2,
+   "name": "الإحماء",
+   "duration": 30,
+   "count": 30,
+   "goods": 24,
+   "smin": 0.12,
+   "smax": 0.2,
+   "lmin": 2.0,
+   "lmax": 2.6,
+   "size": 0.09,
+   "penalty": 3.0,
+   "goals": [
+    12,
+    17,
+    21
+   ],
+   "fingerprint": 551009
+  },
+  {
+   "id": 3,
+   "name": "الصيد",
+   "duration": 35,
+   "count": 38,
+   "goods": 28,
+   "smin": 0.15,
+   "smax": 0.25,
+   "lmin": 1.9,
+   "lmax": 2.4,
+   "size": 0.085,
+   "penalty": 3.0,
+   "goals": [
+    14,
+    20,
+    24
+   ],
+   "fingerprint": 785771
+  },
+  {
+   "id": 4,
+   "name": "الفخاخ",
+   "duration": 35,
+   "count": 42,
+   "goods": 30,
+   "smin": 0.2,
+   "smax": 0.3,
+   "lmin": 1.8,
+   "lmax": 2.2,
+   "size": 0.08,
+   "penalty": 3.0,
+   "goals": [
+    15,
+    21,
+    26
+   ],
+   "fingerprint": 860424
+  },
+  {
+   "id": 5,
+   "name": "الزحام",
+   "duration": 40,
+   "count": 52,
+   "goods": 36,
+   "smin": 0.22,
+   "smax": 0.34,
+   "lmin": 1.7,
+   "lmax": 2.1,
+   "size": 0.078,
+   "penalty": 3.0,
+   "goals": [
+    18,
+    26,
+    31
+   ],
+   "fingerprint": 1189633
+  },
+  {
+   "id": 6,
+   "name": "الرياح",
+   "duration": 40,
+   "count": 58,
+   "goods": 39,
+   "smin": 0.26,
+   "smax": 0.38,
+   "lmin": 1.6,
+   "lmax": 2.0,
+   "size": 0.075,
+   "penalty": 3.0,
+   "goals": [
+    20,
+    28,
+    34
+   ],
+   "fingerprint": 1319936
+  },
+  {
+   "id": 7,
+   "name": "العاصفة",
+   "duration": 45,
+   "count": 70,
+   "goods": 45,
+   "smin": 0.3,
+   "smax": 0.42,
+   "lmin": 1.5,
+   "lmax": 1.9,
+   "size": 0.072,
+   "penalty": 3.0,
+   "goals": [
+    23,
+    32,
+    39
+   ],
+   "fingerprint": 1757516
+  },
+  {
+   "id": 8,
+   "name": "الصياد الخبير",
+   "duration": 45,
+   "count": 78,
+   "goods": 48,
+   "smin": 0.34,
+   "smax": 0.48,
+   "lmin": 1.4,
+   "lmax": 1.8,
+   "size": 0.07,
+   "penalty": 3.0,
+   "goals": [
+    24,
+    34,
+    41
+   ],
+   "fingerprint": 1949939
+  }
+ ]
+}
